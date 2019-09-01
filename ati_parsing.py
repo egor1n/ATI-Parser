@@ -59,8 +59,7 @@ def write_contacts(url):
 #     main()
 
 
-# rating_url_alapaevsk = 'https://ati.su/api/rating/getFirmsRating?filter={"PageNumber":1,"ItemsPerPage":10000,"IsReverse":0,"Geo":{"value":"2_3332","text":"Алапаевск,+Свердловская+область,+Россия","disabled":false},"FirmTypes":[],"IsActiveMemberAtiDoc":0,"IsTribunalUser":0,"HasDisplayedAutoparkItems":0,"HasAtiOrders":0}'
-
+rating_url_alapaevsk = 'https://ati.su/api/rating/getFirmsRating?filter={"PageNumber":1,"ItemsPerPage":10000,"IsReverse":0,"Geo":{"value":"2_3332","text":"Алапаевск,+Свердловская+область,+Россия","disabled":false},"FirmTypes":[],"IsActiveMemberAtiDoc":0,"IsTribunalUser":0,"HasDisplayedAutoparkItems":0,"HasAtiOrders":0}'
 rating_url_moscow = 'https://ati.su/api/rating/getFirmsRating?filter={"PageNumber":1,"ItemsPerPage":5578,"IsReverse":0,"Geo":{"value":"1_151","text":"Москва (регион), Россия","disabled":false},"FirmTypes":[],"IsActiveMemberAtiDoc":0,"IsTribunalUser":0,"HasDisplayedAutoparkItems":0,"HasAtiOrders":0}'
 rating_url_tlt = 'https://ati.su/api/rating/getFirmsRating?filter={"PageNumber":1,"ItemsPerPage":10000,"IsReverse":0,"Geo":{"value":"2_253","text":"Тольятти, Самарская область, Россия","disabled":false},"FirmTypes":[],"IsActiveMemberAtiDoc":0,"IsTribunalUser":0,"HasDisplayedAutoparkItems":0,"HasAtiOrders":0}'
 rating_url_kolomna = 'https://ati.su/api/rating/getFirmsRating?filter={"PageNumber":1,"ItemsPerPage":10000,"IsReverse":0,"Geo":{"value":"2_107","text":"Коломна, Московская область, Россия","disabled":false},"FirmTypes":[],"IsActiveMemberAtiDoc":0,"IsTribunalUser":0,"HasDisplayedAutoparkItems":0,"HasAtiOrders":0}'
@@ -86,6 +85,3 @@ def main():
                   '"FirmTypes":[],"IsActiveMemberAtiDoc":0,"IsTribunalUser":0,' \
                   '"HasDisplayedAutoparkItems":0,"HasAtiOrders":0}'
             write_contacts(url)
-
-
-main()
