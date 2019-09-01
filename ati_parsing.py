@@ -89,7 +89,7 @@ urls = ['https://ati.su/api/rating/getFirmsRating?filter={"PageNumber":1,"ItemsP
 def main():
     values = ['1_151', '2_253', '2_107', '2_1', '2_245']
 
-    for i in range(363, 1000):                                                                                               # CHECK RANGE
+    for i in range(1000):
         value = '2_' + str(i)
         if value not in values:
             url = 'https://ati.su/api/rating/getFirmsRating?filter={' \
