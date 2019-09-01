@@ -1,18 +1,6 @@
 import requests
 import csv_io
 
-# Authorization: Bearer b951b427c982491c98d6077af4539740
-
-# token = 'b951b427c982491c98d6077af4539740'
-# # version_test = '1.2'
-# version = '1.0'
-#
-# url_of_getting_lists_of_firms = 'http://api.ati.su/v1.0/lists/firms?access_token=b951b427c982491c98d6077af4539740'
-#
-# url_of_getting_by_listId_Alapaevsk = 'http://api.ati.su/v1.0/lists/firms/13d91cb4-90c1-e911-bb99-0cc47af30c1b?access_token=b951b427c982491c98d6077af4539740'
-#
-# list_id_Alapaevsk = '13d91cb4-90c1-e911-bb99-0cc47af30c1b'
-
 
 def get_contacts_by_id(all_contacts, ati_id):
     get_contacts_method = 'http://api.ati.su/v1.0/firms/' + str(ati_id) + '/contacts/summary?access_token=b951b427c982491c98d6077af4539740'
